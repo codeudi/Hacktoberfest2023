@@ -100,7 +100,7 @@ li{
     transition: all 0.5s; /* Add transition to all effects to links  */
 }
 
-.navbar-list-item a {
+.navbar-list-item a{
     text-decoration: none;
     color: #fff;
     /* Change link color to white */
@@ -110,7 +110,10 @@ li{
     /* transition: color 0.3s; */ /* Is not needed since the parent (.navbar-list-item) has transition */
 }
 
-
+.navbar-list-item a:hover{/* Removed the text decoration on hover and underline*/
+    text-decoration: none;
+    color:white;
+}
 
 .navbar a {
     text-decoration: none;
@@ -123,13 +126,9 @@ li{
     color: inherit;
 } */
 
-.navbar-list-item:hover a{
-    font-weight: bold; /* Change link weight to bold because the orange was not visible enough */
-}
-
 /* Hamburger menu icon */
 .menu-toggle {
-    display: none;
+    display:none;
     font-size: 24px;
     color: #fff;
     cursor: pointer;
